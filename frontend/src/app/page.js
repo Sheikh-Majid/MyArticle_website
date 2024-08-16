@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
@@ -14,7 +13,7 @@ export default function Home() {
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3001/api/v1/newblog/getAllBlog",
+          "https://myarticle-website.onrender.com/api/v1/newblog/getAllBlog",
           { withCredentials: true }
         );
         console.log(response.data);

@@ -44,7 +44,7 @@ const Page = () => {
     try {
       setLoading(true);
       const response = await axios.post(
-        "http://localhost:3001/api/v1/newblog/firstblog",
+        "https://myarticle-website.onrender.com/api/v1/newblog/firstblog",
         formData,
         {
           headers: {
